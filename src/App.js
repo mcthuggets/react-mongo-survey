@@ -8,14 +8,20 @@ function App() {
   const [gsonName, setgsonName] = useState('')
   const [goal, setgoal] = useState('TCEM')
 
-  let answers = 
-  [
 
-  ]
+
+  const submitClicked = () => {
+    let answers = 
+    { "name": name, "gender": gender, "starterPokemon": starterPokemon, "gsonName": gsonName, "goal": goal }
+    console.log(answers);
+  }
+
 
   return (
         <>
-          
+
+          <form>
+
           {/**  Q1 - Name */}
           <div>
 
@@ -109,6 +115,11 @@ function App() {
             </div>
 
           </div>
+
+
+          <button type="submit" onClick={ submitClicked }> Submit </button>
+
+          </form>
 
         
         </>
