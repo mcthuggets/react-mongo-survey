@@ -117,7 +117,7 @@ function App() {
           </div>
 
 
-          <button type="submit" onClick={ submitClicked }> Submit </button>
+          <button type="button" onClick={ submitClicked }> Submit </button>
 
           </form>
 
